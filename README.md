@@ -1,9 +1,13 @@
 ## Cypress Cucumber sample test
 A sample automated test using Cypress and Cucumber.
 
-This test covers the following scenario:
-1. Navigating to the Cypress homepage (https://www.cypress.io/)
-2. Logging in to Cypress dashboard with an unverified account.
+This test covers the following scenarios:
+1. **Registration.feature**
+  - Unsuccessfully registering with an existing email address
+  - Successfully registering with a randomly-generated email address
+2. **Login.feature**
+  - Unsuccessfully logging in with invalid credentials
+  - Successfully logging in with an existing (unverified) account
 
 ### Installation & how to run
 
