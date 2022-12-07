@@ -22,6 +22,7 @@ module.exports = defineConfig({
   e2e: {
     specPattern: "**/*.feature",
     supportFile: false,
+    retries: 2,
     setupNodeEvents,
   },
 });
