@@ -38,10 +38,16 @@ const credentialTypes = [
 ];
 
 credentialTypes.forEach((credentials) => {
-  When(`I fill in the form with ${credentials.type} credentials`, () => {
-    Step(this, `I fill in the "email" input with "${credentials.email}"`);
-    Step(this, `I fill in the "password" input with "${credentials.password}"`);
-  });
+  When(
+    `I fill in the form with ${credentials.type} account credentials`,
+    () => {
+      Step(this, `I fill in the "email" input with "${credentials.email}"`);
+      Step(
+        this,
+        `I fill in the "password" input with "${credentials.password}"`
+      );
+    }
+  );
 
   Then(
     `The account verification page should display the correct ${credentials.type} email`,
